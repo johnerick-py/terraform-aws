@@ -135,7 +135,7 @@ resource "aws_instance" "web-server-instance" {
                 sudo apt update -y
                 sudo apt install apache2 -y
                 sudo systemctl start apache2
-                sudo bash -c 'echo your very first web server > /var/www/html/index.html'
+                sudo bash -c 'subindo instancia aws pelo terraform (manda a pizza) > /var/www/html/index.html'
                 EOF
   tags = {
     Name = "web-server"
